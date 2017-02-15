@@ -1,3 +1,6 @@
+<!-- form for making a timer -->
+
+
 <!DOCTYPE html>
 <html>
 <body>
@@ -23,3 +26,38 @@ function myFunction() {
 
 </body>
 </html>
+
+
+<!-- Physical Timer --> 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
+<p>Click "Stop" to prevent the first function to execute.</(p>
+<p>(You must click "Stop" before the 3 seconds are up.)</p>
+
+<button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+<button onclick="clearTimeout(myVar)">Stop it</button>
+
+<script>
+function myFunction() {
+    alert("Hello");
+}
+</script>
+</body>
+</html>
+
+
+<!-- User input piece for timer -- >
+
+<form id="form" onsubmit="return false;">
+    <input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="userInput" />
+    <input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="othername();" />
+</form>
+
+function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);
+}
