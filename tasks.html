@@ -26,7 +26,9 @@ ul li.checked {
 }
 ul li.checked::before {
   content: '';
-  position: absolute; 
+  position: absolute;
+  
+  
   border-width: 0 2px 2px 0;
   top: 10px;
   left: 16px;
@@ -59,12 +61,12 @@ ul li.checked::before {
 
 <div id="myDIV" class="header">
   <h2 style="margin:5px">My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Add your tasks here!!!">
+  <input type="text" id="myInput" placeholder="Title...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
 <ul id="myUL">
-  <li>Click the x once you've finished your task!</li>
+  <li>Add your tasks!!!</li>
 </ul>
 
 <script>
@@ -112,6 +114,9 @@ function newElement() {
       var div = this.parentElement;
       div.style.display = "none";
     }
+  }
+}
 </script>
+
 </body>
 </html>
