@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-* {
+ * {
   box-sizing: border-box;
 }
   -webkit-user-select: none;
@@ -59,10 +59,14 @@ ul li.checked::before {
 <body>
 
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">Feb 1st</h2>
-  <input type="text" id="myInput" placeholder="Add event here!">
+  <h2 style="margin:5px">February 1st</h2>
+  <input type="text" id="myInput" placeholder="Add event here!!">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
+
+<ul id="myUL">
+  <li>Click the x when you have finished your task!</li>
+</ul>
 
 <script>
 var myNodelist = document.getElementsByTagName("LI");
@@ -110,7 +114,7 @@ function newElement() {
       div.style.display = "none";
     }
   }
-}F
+}
 </script>
 
 </body>
