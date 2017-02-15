@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <legend> New Timer </legend>
+  
+  Timer Name:<br>
+  <input type="text" id="timerName">
+  Timer Details:<br>
+  <input type="text" id="timerDetail">
+  :<br>
+  <input type="integer" name="lastname">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+
+<p>Also note that the default width of a text input field is 20 characters.</p>
+
+</body>
+
+<script>
+
+console.log(documentGetElementById("timerName").value) 
+console.log(documentGetElementById("timeDetail").value) 
+console.log(documentGetElementById("timerName").value) 
+
+</script>
+
+</html>
