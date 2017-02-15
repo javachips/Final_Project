@@ -2,9 +2,6 @@
 <html>
 <head>
 <style>
-
-
-
 * {
   box-sizing: border-box;
 }
@@ -30,9 +27,7 @@ ul li.checked {
 
 ul li.checked::before {
   content: '';
-  position: absolute;
-  
-  
+  position: absolute; 
   border-width: 0 2px 2px 0;
   top: 10px;
   left: 16px;
@@ -46,7 +41,6 @@ ul li.checked::before {
   display: table;
   clear: both;
 }
-
 .addBtn {
   padding: 10px;
   width: 25%;
@@ -58,7 +52,6 @@ ul li.checked::before {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .addBtn:hover {
   background-color: #bbb;
 }
@@ -113,7 +106,6 @@ function newElement() {
     document.getElementById("myUL").appendChild(li);
   }
   document.getElementById("myInput").value = "";
-
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
@@ -125,9 +117,6 @@ function newElement() {
       var div = this.parentElement;
       div.style.display = "none";
     }
-  }
-}
 </script>
-
 </body>
 </html>
