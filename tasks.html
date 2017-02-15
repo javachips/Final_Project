@@ -8,20 +8,12 @@
 * {
   box-sizing: border-box;
 }
-
-  
-  /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-
-
-}
-
-  
-  
+{
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -30,14 +22,12 @@ ul li:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
 ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
 ul li.checked::before {
   content: '';
   position: absolute;
@@ -51,21 +41,12 @@ ul li.checked::before {
   width: 7px;
 }
 
-
-
-}
-
-/* Clear floats after the header */
 .header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
-}
-
-/* Style the "Add" button */
 .addBtn {
   padding: 10px;
   width: 25%;
@@ -96,7 +77,6 @@ ul li.checked::before {
 </ul>
 
 <script>
-// Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
@@ -106,8 +86,6 @@ for (i = 0; i < myNodelist.length; i++) {
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
-
-// Click on a close button to hide the current list item
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
@@ -117,7 +95,6 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
@@ -125,7 +102,6 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
