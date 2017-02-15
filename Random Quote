@@ -1,0 +1,16 @@
+var randomQuotes = [
+   "Accept no one's definition of your life; define yourself",
+   "You can't make footprints on the sands of time by sitting on your butt... and who wants to make buttprints?",
+   "You can't make footprints on the sands of time by sitting on your butt... and who wants to make buttprints?",
+   "Good things come to those who believe, better things come to those who are patient, and the best things come to those who don't give up.",
+   "Count your rainbows, not your thunderstorms.",
+   "Don't stress. Do your best. Forget the rest.", 
+   "The happiest people don't necessarily have the best of everything but they make the most of everything.",
+   "Nothing's more fun than doing what people say you can't do!",
+   "Today is another chance to get it right.",
+   "By becoming the answer to someone's prayer, we often find the answers to our own.",
+   ];
+   
+var selectQuote = randomQuotes[Math.floor(Math.random() * randomQuotes.length)];
+
+console.log (selectQuote);
