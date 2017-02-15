@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="frm1" accept-charset="get it done!">
+  Reminders title: <input type="text" name="reminder" value="reminder"><br>
+  Details: <input type="text" name="lname" value="Duck"><br>
+</form>
+  what time: <input type="text" name="time" <input type="integers" />
+
+<p>Click "Try it" to display accept-charset of the form:</p>
+
+<button onclick="myFunction()">Remind Me!</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("frm1").acceptCharset;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
