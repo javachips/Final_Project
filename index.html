@@ -47,10 +47,12 @@
 <h2>Opacity with Box</h2>
 
 <div class="container">
-    <div class="middle">
+    <div class="middle image" style="background-image: url("http://images.clipartpanda.com/cloud-clipart-cirrus-clouds-clipart.png);>
 
-        <img src="http://images.clipartpanda.com/cloud-clipart-cirrus-clouds-clipart.png" class="image">
-        <script> 
+     <!--   <img src="http://images.clipartpanda.com/cloud-clipart-cirrus-clouds-clipart.png" class="image"> -->
+        <p id="p1">Hello World!</p>
+        <script>
+            
             var randomQuotes = [
                 "Accept no one's definition of your life; define yourself",
                 "You can't make footprints on the sands of time by sitting on your butt... and who wants to make buttprints?",
@@ -66,17 +68,9 @@
    
             var selectQuote = randomQuotes[Math.floor(Math.random() * randomQuotes.length)];
             console.log (selectQuote);
+            document.getElementById("p1").innerHTML = selectQuote;
             
         </script> 
-    </div>
-</div>
-    <h2>Opacity with Box</h2>
-
-<div class="container">
-    <div class="middle">
-
-        <img src="http://images.clipartpanda.com/cloud-clipart-cirrus-clouds-clipart.png" class="image">
-        <div class="text">"Insert motivational quote"</div>
     </div>
 </div>
 </body> 
